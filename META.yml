@@ -1,0 +1,13 @@
+name: Acme
+version: 1.00
+abstract: The Base of Perfection
+author: Brian Ingerson <ingy@cpan.org>
+license: perl
+distribution_type: module
+requires:
+  perl: 5.6.1
+  Spiffy: 0.14
+no_index:
+  directory:
+    - inc
+generated_by: Module::Install version 0.31
