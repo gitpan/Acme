@@ -13,4 +13,3 @@ MANIFEST			This list of files
 META.yml
 README
 t/acme.t
-t/perfect.t
