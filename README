@@ -2,7 +2,7 @@ NAME
     Acme - The Base of Perfection
 
 SYNOPSIS
-        print "Acme!" if MyModule->isa('Acme');
+        print "Acme!" if MyModule->is_acme;
         print "Acme!" if MyModule->is_perfect;
         print "Acme!" if MyModule->is_the_highest_point_or_stage;
         print "Acme!" 
@@ -14,15 +14,15 @@ SYNOPSIS
         use Acme '-base';
 
 DESCRIPTION
-    Acme.pm is a base class for perfect modules. Subclasses of this module
-    are Acme by definition!
+    Acme.pm is a base class for perfect modules. A subclass of this module
+    is_acme by definition!
 
     In other words, if you use Acme as the base, your class will be the
     summit.
 
 IMPLEMENTATION
     Acme is a subclass of Spiffy.pm. As a bonus, your perfect classes will
-    be *Spiffy* as well. QED.
+    be *spiffy* as well. QED.
 
 NOTE
     The dictionary defines 'Spiffy':
@@ -33,7 +33,7 @@ NOTE
     How perfect!
 
 BUGS
-    None. This module *is* perfect!
+    None. This module *is_perfect*!
 
 AUTHOR
     Brian Ingerson <INGY@cpan.org>

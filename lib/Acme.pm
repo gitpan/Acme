@@ -2,12 +2,14 @@ package Acme;
 use strict;
 use warnings;
 use Spiffy '-base';
-our $VERSION = '1.00';
+our $VERSION = '1.11';
 
-field const is_perfect => 1;
-field const is_the_highest_point_or_stage => 1;
-field const is_one_that_represents_perfection_of_the_thing_expressed => 1;
-field const is_the_bizzity_bomb => 1;
+sub UNIVERSAL::is_acme { $_[0]->isa('Acme') }
+*UNIVERSAL::is_perfect = \&UNIVERSAL::is_acme;
+*UNIVERSAL::is_the_highest_point_or_stage = \&UNIVERSAL::is_acme;
+*UNIVERSAL::is_one_that_represents_perfection_of_the_thing_expressed =
+    \&UNIVERSAL::is_acme;
+*UNIVERSAL::is_the_bizzity_bomb = \&UNIVERSAL::is_acme;
 
 1;
 
@@ -19,7 +21,7 @@ Acme - The Base of Perfection
 
 =head1 SYNOPSIS
 
-    print "Acme!" if MyModule->isa('Acme');
+    print "Acme!" if MyModule->is_acme;
     print "Acme!" if MyModule->is_perfect;
     print "Acme!" if MyModule->is_the_highest_point_or_stage;
     print "Acme!" 
@@ -32,8 +34,8 @@ Acme - The Base of Perfection
 
 =head1 DESCRIPTION
 
-Acme.pm is a base class for perfect modules. Subclasses of this module
-are Acme by definition!
+Acme.pm is a base class for perfect modules. A subclass of this module
+is_acme by definition!
 
 In other words, if you use Acme as the B<base>, your class will be the
 B<summit>.
@@ -41,7 +43,7 @@ B<summit>.
 =head1 IMPLEMENTATION
 
 Acme is a subclass of Spiffy.pm. As a bonus, your perfect classes will be
-I<Spiffy> as well. QED.
+I<spiffy> as well. QED.
 
 =head1 NOTE
 
@@ -54,7 +56,7 @@ How perfect!
 
 =head1 BUGS
 
-None. This module I<is> perfect!
+None. This module I<is_perfect>!
 
 =head1 AUTHOR
 
