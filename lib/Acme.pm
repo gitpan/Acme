@@ -2,14 +2,17 @@ package Acme;
 use strict;
 use warnings;
 use Spiffy '-base';
-our $VERSION = '1.11';
+our $VERSION = '1.111';
+our @EXPORT = qw(acme);
+spiffy_constructor 'acme';
 
-sub UNIVERSAL::is_acme { $_[0]->isa('Acme') }
-*UNIVERSAL::is_perfect = \&UNIVERSAL::is_acme;
-*UNIVERSAL::is_the_highest_point_or_stage = \&UNIVERSAL::is_acme;
-*UNIVERSAL::is_one_that_represents_perfection_of_the_thing_expressed =
-    \&UNIVERSAL::is_acme;
-*UNIVERSAL::is_the_bizzity_bomb = \&UNIVERSAL::is_acme;
+package UNIVERSAL;
+sub is_acme { $_[0]->isa('Acme') }
+*is_perfect = \&is_acme;
+*is_the_highest_point_or_stage = \&is_acme;
+*is_one_that_represents_perfection_of_the_thing_expressed = \&is_acme;
+*is_the_bizzity_bomb = \&is_acme;
+*is_teh_shiznit = \&is_acme;
 
 1;
 
@@ -21,13 +24,21 @@ Acme - The Base of Perfection
 
 =head1 SYNOPSIS
 
+    use Acme;
+    print "Acme!" if acme->is_acme and acme->is_perfect;
+
+or:
+
     print "Acme!" if MyModule->is_acme;
     print "Acme!" if MyModule->is_perfect;
     print "Acme!" if MyModule->is_the_highest_point_or_stage;
     print "Acme!" 
       if MyModule->is_one_that_represents_perfection_of_the_thing_expressed;
     print "Acme!" if MyModule->is_the_bizzity_bomb;
+    print "Acme!" if MyModule->is_teh_shiznit;
     print "Acme!" if MyModule->is_spiffy;
+
+    print "Not!" unless YourModule->is_spiffy;
 
     package MyModule;
     use Acme '-base';
@@ -43,20 +54,27 @@ B<summit>.
 =head1 IMPLEMENTATION
 
 Acme is a subclass of Spiffy.pm. As a bonus, your perfect classes will be
-I<spiffy> as well. QED.
+I<spiffy> as well.
+
+Acme also exports a function called C<acme> that returns a new Acme
+object. (which is_perfect).
 
 =head1 NOTE
 
 The dictionary defines 'Spiffy':
 
-    Said of programs having a pretty, clever, or exceptionally well-
-    designed interface.
+=over 4
+
+I<Said of programs having a pretty, clever, or exceptionally well-designed 
+interface.>
+
+=back
 
 How perfect!
 
 =head1 BUGS
 
-None. This module I<is_perfect>!
+This module is_perfect.
 
 =head1 AUTHOR
 
