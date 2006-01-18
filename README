@@ -14,9 +14,8 @@ SYNOPSIS
           if MyModule->is_one_that_represents_perfection_of_the_thing_expressed;
         print "Acme!" if MyModule->is_the_bizzity_bomb;
         print "Acme!" if MyModule->is_teh_shiznit;
-        print "Acme!" if MyModule->is_spiffy;
 
-        print "Not!" unless YourModule->is_spiffy;
+        print "Not!" unless YourModule->is_acme;
 
         package MyModule;
         use Acme '-base';
@@ -47,10 +46,11 @@ BUGS
     This module is_perfect.
 
 AUTHOR
-    Brian Ingerson <INGY@cpan.org>
+    Ingy döt Net <ingy@cpan.org>
 
 COPYRIGHT
-    Copyright (c) 2004. Brian Ingerson. All rights reserved.
+    Copyright (c) 2006. Ingy döt Net. All rights reserved. Copyright (c)
+    2004, 2005. Brian Ingerson. All rights reserved.
 
     This program is free software; you can redistribute it and/or modify it
     under the same terms as Perl itself.

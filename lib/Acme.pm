@@ -1,6 +1,7 @@
 package Acme;
+use 5.006001;
 use Spiffy -Base;
-our $VERSION = '1.1111';
+our $VERSION = '1.11111';
 our @EXPORT = qw(acme);
 
 sub acme() { Acme->new(@_) }
@@ -38,9 +39,8 @@ or:
       if MyModule->is_one_that_represents_perfection_of_the_thing_expressed;
     print "Acme!" if MyModule->is_the_bizzity_bomb;
     print "Acme!" if MyModule->is_teh_shiznit;
-    print "Acme!" if MyModule->is_spiffy;
 
-    print "Not!" unless YourModule->is_spiffy;
+    print "Not!" unless YourModule->is_acme;
 
     package MyModule;
     use Acme '-base';
@@ -80,10 +80,11 @@ This module is_perfect.
 
 =head1 AUTHOR
 
-Brian Ingerson <INGY@cpan.org>
+Ingy döt Net <ingy@cpan.org>
 
 =head1 COPYRIGHT
 
+Copyright (c) 2006. Ingy döt Net. All rights reserved.
 Copyright (c) 2004, 2005. Brian Ingerson. All rights reserved.
 
 This program is free software; you can redistribute it and/or modify it
