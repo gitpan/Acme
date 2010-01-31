@@ -1,9 +1,6 @@
-use inc::Module::Install;
+use ExtUtils::MakeMaker;
 
-name        'Acme';
-all_from    'lib/Acme.pm';
-
-requires    perl => '5.6.1';
-requires    Spiffy => '0.14';
-
-WriteAll;
+WriteMakefile(
+   NAME => 'Your::Module',
+   VERSION_FROM => 'lib/Your/Module.pm'
+);
