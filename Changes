@@ -1,3 +1,7 @@
+1.11111111 Wed Jul  2 16:06:33 PDT 2014
+ - Perfected Acme.pm
+ - Split 'package UNIVERSAL' for pause. ether++
+
 1.1111111 Wed Jul  2 14:39:48 PDT 2014
  - Perfected Acme.pm - Zilla::Dist (A-Z!)
 
