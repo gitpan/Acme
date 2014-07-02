@@ -1,32 +1,23 @@
----
-version: 1.111111
-date:    Fri Jan 21 00:33:52 EST 2011
-changes:
-- Perfected Acme.pm once more
-- https://rt.cpan.org/Ticket/Display.html?id=61851
----
-version: 1.11111
-date:    Wed Jan 18 15:04:45 PST 2006
-changes:
-- Perfected Acme.pm
----
-version: 1.1111
-date:    Sat Mar 26 22:40:47 PST 2005
-changes:
-- Perfected Acme.pm
----
-version: 1.111
-date:    
-changes:
-- Acme is teh_shiznit
-- Export Spiffy acme()
----
-version: 1.11
-date:    Sun Mar 21 04:04:25 PST 2004
-changes:
-- Acme Becomes One With The UNIVERSAL.
----
-version: 1.00
-date:    Sun Mar 21 02:36:07 PST 2004
-changes:
-- Initial release.
+1.1111111 Wed Jul  2 14:39:48 PDT 2014
+ - Perfected Acme.pm - Zilla::Dist (A-Z!)
+
+1.111111 Fri Jan 21 00:33:52 EST 2011
+ - Perfected Acme.pm once more
+ - https://rt.cpan.org/Ticket/Display.html?id=61851
+
+1.11111 Wed Jan 18 15:04:45 PST 2006
+ - Perfected Acme.pm
+
+1.1111 Sat Mar 26 22:40:47 PST 2005
+ - Perfected Acme.pm
+
+1.111 Wed Mar 24 05:05:26 PST 2004
+ - Acme is teh_shiznit
+ - Export Spiffy acme()
+
+1.11 Sun Mar 21 04:04:25 PST 2004
+ - Acme Becomes One With The UNIVERSAL.
+
+1.00 Sun Mar 21 02:36:07 PST 2004
+ - Initial release.
+
