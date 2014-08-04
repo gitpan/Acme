@@ -1,3 +1,7 @@
+1.111111111 Sun Aug  3 21:10:23 PDT 2014
+ - Perfected Acme.pm
+ - Fixed Meta and added Contributing file.
+
 1.11111111 Wed Jul  2 16:06:33 PDT 2014
  - Perfected Acme.pm
  - Split 'package UNIVERSAL' for pause. ether++
