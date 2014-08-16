@@ -9,5 +9,6 @@ Makefile.PL
 README
 lib/Acme.pm
 lib/Acme.pod
+t/000-compile-modules.t
 t/acme.t
 t/release-pod-syntax.t

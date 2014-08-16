@@ -22,7 +22,7 @@ my %WriteMakefileArgs = (
   "PREREQ_PM" => {
     "Spiffy" => 0
   },
-  "VERSION" => "1.111111111",
+  "VERSION" => "1.1111111111",
   "test" => {
     "TESTS" => "t/*.t"
   }
